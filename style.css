@@ -21,6 +21,7 @@ h1{
 h2,h3,h4,h5{
     text-align: center;
     font-size: 2rem;
+    color: purple;
 }
 .grid-container{
     display: grid;
@@ -38,7 +39,11 @@ h2,h3,h4,h5{
     margin-right: 20px;
     margin-top: 10px;
 }
-
+.work p{
+    font-size: 4rem;
+    text-align: center;
+    color: purple;
+}
 .side{
     width: 350px;
     height: 900px;
@@ -96,6 +101,14 @@ a{
     footer{
         height: 150px;
     }
+    .work p {
+        font-size: 3rem;
+        text-align: center;
+        clear:left;
+    }
+    .side{
+        margin-left: 10px;
+    }
     .grid-container{
         grid-template-columns: auto;
     }
@@ -103,10 +116,10 @@ a{
         height: 300px;
     }
     .contact{
-        font-size: 20px ;
+        font-size: 25px ;
     }
     h1{
-        padding-top: 30px;
+        padding-top: 100px;
     }
     footer p{
         text-align: center;
