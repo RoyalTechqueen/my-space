@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 550px;
+    height: 450px;
+    background-color: aqua;
+}
+div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+img{
+    margin: 5px 0px;
+}
+h2{
+    margin: 3px 0px;
+}
+h4{
+    margin: 3px 0px;
+}
+p{
+    margin: 5px 5px;
+}
+button{
+    width: 30px;
+    height: 20px;
+    background-color: rgb(140, 237, 237);
+    border-radius: 3px solid transparent;
+    margin: 10px 4px;
+}
+button:hover{
+    cursor: pointer;
+}
+.suscribe{
+    width: 90px;
+    height: 30px;
+    background-color: rgb(140, 237, 237);
+    border-radius: 3px solid transparent;
+    margin: 10px 0px;
+}
