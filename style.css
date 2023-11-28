@@ -98,10 +98,10 @@ a{
     }
     .grid-container{
         grid-template-columns: auto;
-        margin-bottom:80px;
     }
     .side{
         margin-right:0;
+    }
     .me{
         height: 300px;
     }
