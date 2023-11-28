@@ -84,7 +84,7 @@ footer li{
 a{
     color: purple;
 }
-@media(min-width:100px) and (max-width:900px){
+@media(min-width:50px) and (max-width:600px){
     footer > ul{
         display: inline;
         margin-left: -40px;
