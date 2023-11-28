@@ -97,6 +97,10 @@ a{
     }
     .grid-container{
         grid-template-columns: auto;
+        float: none;
+    }
+    . side{
+        float: none:
     }
     .me{
         height: 300px;
