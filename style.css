@@ -84,7 +84,7 @@ footer li{
 a{
     color: purple;
 }
-/**@media(min-width:50px) and (max-width:600px){
+@media(min-width:400px) and (max-width:900px){
     footer > ul{
         display: inline;
         margin-left: -40px;
@@ -97,10 +97,7 @@ a{
     }
     .grid-container{
         grid-template-columns: auto;
-        float: none;
-    }
-    . side{
-        float: none:
+        margin-top:40px;
     }
     .me{
         height: 300px;
@@ -114,4 +111,4 @@ a{
     footer p{
         text-align: center;
     }
-}*/
+}
