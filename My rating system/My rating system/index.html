@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/all.css">
+    <title>My Rating System</title>
+</head>
+<body>
+    <div class="content">
+        <h3>If you love our products and services, please do well to leave us your feedback and a friendly rating <i class="fa-solid fa-heart"></i></h3>
+        <div class="stars">
+            <button><i class="fa-solid fa-star" id="star1"></i></button>
+            <button><i class="fa-solid fa-star" id="star2"></i></button>
+            <button><i class="fa-solid fa-star" id="star3"></i></button>
+            <button><i class="fa-solid fa-star" id="star4"></i></button>
+            <button><i class="fa-solid fa-star" id="star5"></i></button>
+        </div>
+        <!-- <div class="star-widget">
+            <input type="radio" name="rate" id="rate-5">
+            <label for="rate-5" class="fas fa-star"></label>
+            <input type="radio" name="rate" id="rate-4">
+            <label for="rate-4" class="fas fa-star"></label>
+            <input type="radio" name="rate" id="rate-3">
+            <label for="rate-3" class="fas fa-star"></label>
+            <input type="radio" name="rate" id="rate-2">
+            <label for="rate-2" class="fas fa-star"></label>
+            <input type="radio" name="rate" id="rate-1">
+            <label for="rate-1" class="fas fa-star"></label>
+        </div> -->
+
+        <textarea placeholder="Your feedback" cols="40" rows="3"></textarea><br>
+        <button class="submit">Submit</button>
+    </div>
+
+    <div class="thank-you">
+        <div class="close-btn">
+            <span></span>
+            <span></span>
+        </div>
+        <div class="selected-rating">
+            <h2 class="rate-us">You rated us <span class="rated" id="rateNum"></span> out of 5</h2>
+        </div>
+        <h3>Thank you!</h3>
+        <p class="thank-you-msg">Your feedback is very important to us to help improve our services to you.</p>
+    </div>
+
+
+    <script src="app.js"></script>
+</body>
+</html>

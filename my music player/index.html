@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music player</title>
+    <link rel="stylesheet" href="./resources/css/style.css">
+    <link rel="stylesheet" href="./resources/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="top-bar">
+            <span>Now Playing</span>
+        </div>
+
+        <div class="song-details">
+            <p class="name"></p>
+            <p class="artist"></p>
+        </div>
+        <div class="progress-area">
+            <div class="progress-bar"></div>
+            <div class="timer">
+                <span class="current">0:00</span>
+                <span class="duration">0:00</span>
+            </div>
+            <audio id="main-audio" src=""></audio>
+        </div>
+        <div class="controls">
+            <i id="repeat-plist" class="fa fa-random" aria-hidden="true"></i>
+            <i id="prev" class="fa fa-step-backward" aria-hidden="true"></i>
+            <div class="play-pause">
+                <i class="fa fa-play"></i>
+            </div>
+            <i id="next"  class="fa fa-step-forward" aria-hidden="true"></i>
+        </div>
+
+    </div>
+    <script src="./resources/js/app.js"></script>
+    <script src="./resources/js/music-list.js"></script>
+</body>
+
+</html>

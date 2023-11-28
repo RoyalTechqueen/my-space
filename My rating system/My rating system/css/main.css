@@ -1,0 +1,200 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+}
+
+.content{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 255, 255, 0.153);
+    border-radius: 20px;
+    margin: 13%;
+    height: 100%;
+    width: 70vw;
+    padding: 30px 50px;
+    text-align: center;
+}
+
+.content h3{
+    font-weight: 400;
+    text-align: center;
+}
+
+.fa-heart{
+    color: gold;
+}
+
+.stars{
+    text-align: center;
+    margin-bottom: 1%;
+}
+
+button{
+    font-size: 30px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: rgba(128, 128, 128, 0.282);
+}
+
+.fa-star:hover{
+    color: rgb(149, 158, 172);
+    transition: all .3s ease-in-out;
+}
+
+.fa-star:checked ~ button{
+    color: gold;
+}
+
+/* .star-widget{
+    text-align: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.star-widget input{
+    display: none;
+    border: transparent;
+}
+
+.star-widget label{
+    font-size: 40px;
+    justify-content: center;
+    color: rgba(68, 68, 68, 0.35);
+    padding: 10px;
+    border: transparent;
+    float: right;
+    transition: all .3s ease;
+}
+
+input:not(:checked) ~ label:hover,
+input:not(:checked) ~ label:hover ~ label{
+    color: rgb(255, 221, 68);
+}
+input:checked ~ label{
+    color:rgb(255, 238, 119);
+    text-shadow: 0 0 20px rgb(153, 85, 34);
+} */
+
+textarea{
+    font-family: sans-serif;
+    font-size: 16px;
+    border: transparent;
+    border-radius: 5px;
+    border-top-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    padding: 10px 20px;
+    margin: 2% 0;
+    outline: none;
+}
+
+.submit{
+    justify-content: center;
+    border: transparent;
+    font-size: 16px;
+    color: black;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    outline: none;
+}
+
+.submit:focus{
+    color: white;
+    font-weight: 600;
+    background-color: gold;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.25);
+    transition: all .3s ease-in-out;
+}
+
+.submit:hover{
+    border: none;
+    color: white;
+    font-weight: 600;
+    background-color: gold;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.25);
+    transition: all .3s ease-in-out;
+}
+
+/* THANK YOU */
+.thank-you{
+    justify-content: center;
+    display: block;
+    background-color: rgba(0, 255, 255, 0.153);
+    border-radius: 20px;
+    margin: 13%;
+    height: 100%;
+    width: 50vw;
+    padding: 30px 30px;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+.selected-rating{
+    width: 80%;
+    padding: 0px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.thank-you h3{
+    text-align: center;
+    font-size: 24px;
+    font-weight: normal;
+    letter-spacing: 1.4px;
+    margin: 0 0 8px;
+}
+
+.thank-you-msg{
+    font-size: 14px;
+}
+
+.close-btn{
+    position: absolute;
+    right: 30px;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    cursor: pointer;
+}
+
+.close-btn span{
+    height: 3px;
+    width: 20px;
+    background-color: rgb(124, 135, 152);
+    position: absolute;
+}
+
+.close-btn span:nth-child(1){
+    transform: translate(0px, 2px) rotate(45deg);
+}
+
+.close-btn span:nth-child(2){
+    transform: translate(0px, 2px) rotate(-45deg);
+}
+
+.content.active{
+    display: none;
+}
+
+.thank-you{
+    display: none;
+}
+
+.thank-you.active{
+    display: block;
+}

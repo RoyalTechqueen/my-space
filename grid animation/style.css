@@ -1,0 +1,146 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 14px;
+    font-family: "Poppins", sans-serif;
+    color: white;
+    background-color: rgb(234, 233, 233);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+main{
+    position: relative;
+    z-index: 999;
+    width: 80vw;
+    height: 70vh;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: 
+                "d d j k"
+                "e p p k"
+    ;
+    grid-gap: 10px;
+}
+
+main div{
+    border-radius: 10px;
+    padding: 0.5em 1em;
+}
+
+.daniel{
+    background-color: hsl(263, 55%, 52%);
+    grid-area: d;
+}
+
+.daniel .name{
+    margin-left: -0.5em;
+    margin-top: 0.2em;
+}
+
+.img-info{
+    display: flex;
+    margin-left: -0.7em;
+}
+
+.img-info img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.name h4{
+    font-size: 12px;
+    font-weight: 300;
+}
+
+
+.img-info .name p{
+    font-size: 10px;
+    opacity: 0.6;
+}
+
+h4{
+    font-size: 12px;
+}
+
+.decrip{
+    font-size: 10px;
+    color: rgb(187, 184, 184);
+    margin-top: 0.5em;
+}
+
+.jonathan{
+    background-color: hsl(217, 19%, 35%);
+    grid-area: j;
+}
+
+.kira{
+    background-color: white;
+    color: black;
+    grid-area: k;
+}
+
+.jeanette{
+    background-color: white;
+    color: black;
+    grid-area: e;
+}
+
+.patrick{
+    background-color: hsl(219, 29%, 14%);
+    grid-area: p;
+}
+
+section{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+}
+
+.bubbles{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: linear-gradient(90deg, black,white);
+    animation: bubble 10s linear infinite 1s;
+    opacity: 0;
+}
+
+@keyframes bubble {
+    0%{
+        opacity: 0.5;
+    }
+
+    75%,90%{
+        opacity: 0;
+        transform: translateX(70vw);
+    }
+}
+
+@media screen and (max-width:600px){
+    body{
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    main{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+
+    }
+}
