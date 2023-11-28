@@ -99,9 +99,6 @@ a{
     .grid-container{
         grid-template-columns: auto;
     }
-    .side{
-        margin-right:0;
-    }
     .me{
         height: 300px;
     }
